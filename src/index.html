@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./output.css" />
+
+    <title>DrivoCar</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- boc icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- swipper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-white dark:bg-[#1C1C1C] dark:text-white">
+    <!-- Header started-->
+    <header
+      class="h-[94px] border-b-[1.5px] border-[#E5E7EA] shadow-2xl flex justify-center items-center"
+    >
+      <div class="container mx-auto max-w-[1200px]">
+        <nav class="nav flex items-center">
+          <img src="./images/Logo.svg" alt="logo" class="cursor-pointer" />
+          <ul class="nav__list flex items-center ml-5 z-40">
+            <li
+              class="nav__list-item flex px-4 py-[18px] dark:hover:bg-[#272727] cursor-pointer hover:bg-[#F5F5F5] hover:rounded-full duration-300"
+            >
+              <a
+                href="#"
+                class="text-[18px] w-full h-full leading-[22px] font-medium"
+                >Categories</a
+              >
+            </li>
+            <li
+              class="nav__list-item group relative px-4 py-[18px] w-[147px] flex items-center justify-around cursor-pointer dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-full duration-300"
+            >
+              <a
+                href="#"
+                class="text-[18px] w-full h-full leading-[22px] font-medium"
+                >About Us</a
+              >
+              <i
+                class="bx bx-chevron-down text-xl group-hover:bx-chevron-up"
+              ></i>
+              <div
+                class="absolute hidden group-hover:block top-0 pt-[70px] left-0"
+              >
+                <ul
+                  class="dropdown z-20 bg-white w-[147px] p-[10px] duration-300 backdrop:blur-md dark:bg-[#1C1C1C] rounded-[20px] dark:shadow-white dark:shadow-sm"
+                >
+                  <li
+                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                  >
+                    <a href="#" class="w-full h-full"> News </a>
+                  </li>
+                  <li
+                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                  >
+                    <a href="#" class="w-full h-full"> Careers </a>
+                  </li>
+                  <li
+                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                  >
+                    <a href="#" class="w-full h-full"> Locations </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="nav__list-item relative group flex items-center justify-around px-4 py-[18px] cursor-pointer w-[169px] dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-full duration-300"
+            >
+              <a
+                href="#"
+                class="text-[18px] leading-[22px] font-medium w-full h-full"
+              >
+                Help center
+              </a>
+              <i class="bx bx-chevron-down text-xl"></i>
+              <div
+                class="absolute hidden group-hover:block top-0 pt-[70px] left-0"
+              >
+                <ul
+                  class="dropdown bg-white w-[169px] p-[10px] duration-300 backdrop:blur-md dark:bg-[#1C1C1C] rounded-[20px] dark:shadow-white dark:shadow-sm"
+                >
+                  <li
+                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                  >
+                    <a href="#" class="w-full h-full"> FAQ </a>
+                  </li>
+                  <li
+                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                  >
+                    <a href="#" class="w-full h-full"> Contact us </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <h1
+            class="inline-block cursor-pointer text-[18px] leading-[22px] font-semibold ml-[196px] duration-300"
+          >
+            +1 855 420 0000
+          </h1>
+          <div
+            class="mode dark:bg-[#272727] p-[21px] ml-6 bg-[#F5F5F5] dark:hover:bg-[#636161] hover:bg-[#e2dfdf] duration-300 cursor-pointer rounded-full flex justify-center items-center"
+          >
+            <img
+              id="mode-icon"
+              src="./images/oy.svg"
+              class="w-4 h-4"
+              alt="dark-logo"
+            />
+          </div>
+          <div
+            class="loginbtn group btn bg-[#299764] cursor-pointer w-[142px] h-[58px] rounded-full hover:bg-[#077743] active:bg-[#F5F5F5] flex justify-center items-center ml-4"
+          >
+            <h1
+              class="group-active:text-black text-white inline-block text-[18px] leading-[22px] font-medium"
+            >
+              Login
+            </h1>
+            <img
+              src="./images/exit-icon.svg"
+              alt="exit-icon"
+              class="ml-[11px]"
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header finihsed -->
+      <!-- modal started -->
+    <section>
+
+      <div
+        class="modal-window hidden bg-[#00000081] w-full min-h-screen fixed bottom-10 z-50 backdrop-blur-sm flex"
+      >
+        <div
+          class="min-w-[600px] dark:bg-[#272727] max-h-[600px] relative bg-white mx-auto mt-40 rounded-2xl overflow-hidden shadow-md shadow-slate-900"
+        >
+          <div class="justify-end items-center flex absolute top-2 right-0">
+            <button
+              type="submit"
+              class="close-btn rounded-lg pt-5 pr-4 text-white font-bold duration-200"
+            >
+              <img src="./images/Dark modexxxxx.png" alt="" />
+            </button>
+          </div>
+
+          <div class="justify-center flex mx-auto mt-14">
+            <h1 class="text-bold text-4xl">Login</h1>
+          </div>
+
+          <div class="justify-center items-center flex mt-4">
+            <p>Use the email and password that you login</p>
+          </div>
+          <div class="justify-center items-center flex mt-6">
+            <input
+              type="text"
+              class="form-control w-[90%] h-[60px] mx-auto p-3 rounded-2xl mb-4 focus:ring-4 focus:ring-sky-400 focus:outline-none border"
+              id="Email"
+              placeholder="enter fullname"
+            />
+          </div>
+
+          <div class="justify-center items-center flex mt-2">
+            <input
+              type="password"
+              class="form-control w-[90%] h-[60px] mx-auto p-3 rounded-2xl mb-4 focus:ring-4 focus:ring-sky-400 focus:outline-none border"
+              id="Password"
+              placeholder="enter fullname"
+            />
+          </div>
+
+          <div class="flex justify-between w-[90%] mx-auto">
+            <a href="#">
+              <p class="text-red-500">Entered the wrong password</p>
+            </a>
+
+            <a href="#">
+              <p>Forgot password</p>
+            </a>
+          </div>
+
+          <div class="flex justify-center items-center mt-8">
+            <p>I want to create an account</p>
+          </div>
+
+          <div class="justify-center items-center flex mt-4">
+            <div
+              class="group z-50 btn bg-[#299764] cursor-pointer w-[90%] h-[58px] rounded-full hover:bg-[#077743] active:bg-[#F5F5F5] flex justify-center items-center"
+            >
+              <h1
+                class="group-active:text-black text-white inline-block text-[18px] leading-[22px] font-medium"
+              >
+                Login
+              </h1>
+              <img
+                src="./images/exit-icon.svg"
+                alt="exit-icon"
+                class="ml-[11px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+          <!-- modal finished -->
+
+    <!-- Karusel strat-->
+    <section class="slider bg-gray-100 relative dark:bg-[#272727]">
+      <div class="container mx-auto max-w-[1240px] px-5">
+        <div class="slider__wrapper relative">
+          <div
+            class="swiper mySwiper z-10 mt-5 relative rounded-2xl overflow-hidden"
+          >
+            <div class="swiper-wrapper mx-auto">
+              <!-- dinamic content -->
+            </div>
+            <div
+              class="w-[84px] absolute bottom-10 right-10 z-10 flex items-center justify-between"
+            >
+              <div
+                class="w-9 h-9 swiper__left rounded-full z-10 bg-white hover:bg-[#cbcaca] cursor-pointer flex items-center justify-center"
+              >
+                <i class="bx bx-chevron-left text-xl text-black"></i>
+              </div>
+              <div
+                class="w-9 h-9 swiper__right rounded-full z-10 bg-white hover:bg-[#cbcaca] cursor-pointer flex items-center justify-center"
+              >
+                <i class="bx bx-chevron-right text-xl text-black"></i>
+              </div>
+            </div>
+            <div
+              class="pagin flex justify-start items-start w-[100px] absolute left-10 bottom-[46px]"
+            >
+              <!-- dinamic pagin elements -->
+            </div>
+          </div>
+          <div
+            class="absolute w-[600px] bg-white left-[25%] -bottom-[30px] z-30 rounded-full"
+          >
+            <div class="relative">
+              <input
+                type="text"
+                id="search"
+                placeholder="Find the car of your dreams"
+                class="focus:ring-2 dark:placeholder:text-[#555555] bg-transparent flex-grow text-[#000] focus:ring-[#299764] h-[66px] font-medium text-[18px] shadow-[0px_4px_10px_rgba(0,0,0,0.15)] leading-[22px] w-[600px] py-[18px] px-[30px] rounded-full outline-none"
+              />
+              <div
+                class="icon w-[58px] hover:bg-[#077743] flex items-center justify-center text-2xl text-white cursor-pointer h-[58px] absolute top-1 right-1 rounded-full bg-[#299764]"
+              >
+                <i class="bx bx-search-alt-2"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Karusel end -->
+
+    <!-- Cards start -->
+    <section class="">
+      <div>
+        <div class="justify-center items-center flex mx-auto mt-[120px]">
+          <h1 class="text-4xl">Choose the car of your dreams</h1>
+        </div>
+
+        <div
+          class="justify-center items-center flex mx-auto w-[570px] mt-[30px]"
+        >
+          <p class="text-center">
+            We provide our customers with the most incredible driving emotions.
+             That is why there are only world-class cars in our fleet
+          </p>
+        </div>
+
+        <div class="flex justify-center items-center mt-[35px]">
+          <div
+            class="w-[155px] border rounded-3xl bg-green-500 hover:bg-green-600 h-[58px] justify-center items-center flex"
+          >
+            <h1 class="text-2xl">Compact</h1>
+          </div>
+          <div
+            class="w-[170px] ml-4 border rounded-3xl hover:bg-green-600 h-[58px] justify-center items-center flex"
+          >
+            <h1 class="text-2xl">Sports cars</h1>
+          </div>
+          <div
+            class="w-[119px] ml-4 border rounded-3xl hover:bg-green-600 h-[58px] justify-center items-center flex"
+          >
+            <h1 class="text-2xl">Vans</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards container mt-[30px] col-4 justify-center mx-auto flex">
+        <div
+          class="dark:text-white dark:bg-[#272727] w-[350px] m-5 h-[433px] border hover:bg-green-700 rounded-2xl shadow-md bg-[#F5F5F5]"
+        >
+          <div class="m-[30px]">
+            <h1 class="text-3xl font-bold">Ford Fiesta</h1>
+            <p class="mt-2">Economy Car</p>
+          </div>
+
+          <div><img src="./images/image 13fiesta.png" alt="" /></div>
+
+          <div class="flex mx-auto">
+            <div class="flex ml-8">
+              <img src="./images/Iconodamcha.png" alt="" class="mx-2 w-4" />
+              <p class="">5 Seats</p>
+            </div>
+
+            <div class="flex mx-12">
+              <img src="./images/Vectorautamatic.png" alt="" class="mx-2 w-4" />
+              <p>Automatic</p>
+            </div>
+          </div>
+
+          <div class="flex mx-auto my-6">
+            <div class="flex ml-8">
+              <img src="./images/Iconyears.png" alt="" class="mx-2 w-4" />
+              <p>21+ Years</p>
+            </div>
+
+            <div class="flex mx-8">
+              <img src="./images/Vectorkm.png" alt="" class="mx-2 w-4" />
+              <p>1-lit / 2.5 km</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="dark:text-white dark:bg-[#272727] w-[350px] m-5 h-[433px] border hover:bg-green-700 rounded-2xl shadow-md bg-[#F5F5F5]"
+        >
+          <div class="m-[30px]">
+            <h1 class="text-3xl font-bold">Nissan Versa</h1>
+            <p class="mt-2">Compact Car</p>
+          </div>
+
+          <div><img src="./images/image 13versa.png" alt="" /></div>
+
+          <div class="flex mx-auto">
+            <div class="flex ml-8">
+              <img src="./images/Iconodamcha.png" alt="" class="mx-2 w-4" />
+              <p class="">5 Seats</p>
+            </div>
+
+            <div class="flex mx-12">
+              <img src="./images/Vectorautamatic.png" alt="" class="mx-2 w-4" />
+              <p>Automatic</p>
+            </div>
+          </div>
+
+          <div class="flex mx-auto my-6">
+            <div class="flex ml-8">
+              <img src="./images/Iconyears.png" alt="" class="mx-2 w-4" />
+              <p>21+ Years</p>
+            </div>
+
+            <div class="flex mx-8">
+              <img src="./images/Vectorkm.png" alt="" class="mx-2 w-4" />
+              <p>1-lit / 2.5 km</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="dark:text-white dark:bg-[#272727] w-[350px] m-5 h-[433px] border hover:bg-green-700 rounded-2xl shadow-md bg-[#F5F5F5]"
+        >
+          <div class="m-[30px]">
+            <h1 class="text-3xl font-bold">Toyota Corolla</h1>
+            <p class="mt-2">Mid-size Car</p>
+          </div>
+
+          <div><img src="./images/image 13corolla.png" alt="" /></div>
+
+          <div class="flex mx-auto">
+            <div class="flex ml-8">
+              <img src="./images/Iconodamcha.png" alt="" class="mx-2 w-4" />
+              <p class="">5 Seats</p>
+            </div>
+
+            <div class="flex mx-12">
+              <img src="./images/Vectorautamatic.png" alt="" class="mx-2 w-4" />
+              <p>Automatic</p>
+            </div>
+          </div>
+
+          <div class="flex mx-auto my-6">
+            <div class="flex ml-8">
+              <img src="./images/Iconyears.png" alt="" class="mx-2 w-4" />
+              <p>21+ Years</p>
+            </div>
+
+            <div class="flex mx-8">
+              <img src="./images/Vectorkm.png" alt="" class="mx-2 w-4" />
+              <p>1-lit / 2.5 km</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards container col-4 mx-auto justify-center flex">
+        <div
+          class="dark:text-white dark:bg-[#272727] w-[350px] m-5 h-[433px] border hover:bg-green-700 rounded-2xl shadow-md bg-[#F5F5F5]"
+        >
+          <div class="m-[30px]">
+            <h1 class="text-3xl font-bold">Nissan Rogue</h1>
+            <p class="mt-2">Mid-size SUV</p>
+          </div>
+
+          <div><img src="./images/image 13rogue.png" alt="" /></div>
+
+          <div class="flex mx-auto">
+            <div class="flex ml-8">
+              <img src="./images/Iconodamcha.png" alt="" class="mx-2 w-4" />
+              <p class="">5 Seats</p>
+            </div>
+
+            <div class="flex mx-12">
+              <img src="./images/Vectorautamatic.png" alt="" class="mx-2 w-4" />
+              <p>Automatic</p>
+            </div>
+          </div>
+
+          <div class="flex mx-auto my-6">
+            <div class="flex ml-8">
+              <img src="./images/Iconyears.png" alt="" class="mx-2 w-4" />
+              <p>21+ Years</p>
+            </div>
+
+            <div class="flex mx-8">
+              <img src="./images/Vectorkm.png" alt="" class="mx-2 w-4" />
+              <p>1-lit / 2.5 km</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="dark:text-white dark:bg-[#272727] w-[350px] m-5 h-[433px] border rounded-2xl hover:bg-green-700 shadow-md bg-[#F5F5F5]"
+        >
+          <div class="m-[30px]">
+            <h1 class="text-3xl font-bold">Chevy Traverse</h1>
+            <p class="mt-2">EFull-size SUV</p>
+          </div>
+
+          <div><img src="./images/image 13traverse.png" alt="" /></div>
+
+          <div class="flex mx-auto">
+            <div class="flex ml-8">
+              <img src="./images/Iconodamcha.png" alt="" class="mx-2 w-4" />
+              <p class="">5 Seats</p>
+            </div>
+
+            <div class="flex mx-12">
+              <img src="./images/Vectorautamatic.png" alt="" class="mx-2 w-4" />
+              <p>Automatic</p>
+            </div>
+          </div>
+
+          <div class="flex mx-auto my-6">
+            <div class="flex ml-8">
+              <img src="./images/Iconyears.png" alt="" class="mx-2 w-4" />
+              <p>21+ Years</p>
+            </div>
+
+            <div class="flex mx-8">
+              <img src="./images/Vectorkm.png" alt="" class="mx-2 w-4" />
+              <p>1-lit / 2.5 km</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="dark:text-white dark:bg-[#272727] w-[350px] m-5 h-[433px] border rounded-2xl hover:bg-green-700 shadow-md bg-[#F5F5F5]"
+        >
+          <div class="m-[30px]">
+            <h1 class="text-3xl font-bold">Nissan Altima</h1>
+            <p class="mt-2">Full-size Car</p>
+          </div>
+
+          <div><img src="./images/image 13altima.png" alt="" /></div>
+
+          <div class="flex mx-auto">
+            <div class="flex ml-8">
+              <img src="./images/Iconodamcha.png" alt="" class="mx-2 w-4" />
+              <p class="">5 Seats</p>
+            </div>
+
+            <div class="flex mx-12">
+              <img src="./images/Vectorautamatic.png" alt="" class="mx-2 w-4" />
+              <p>Automatic</p>
+            </div>
+          </div>
+
+          <div class="flex mx-auto my-6">
+            <div class="flex ml-8">
+              <img src="./images/Iconyears.png" alt="" class="mx-2 w-4" />
+              <p>21+ Years</p>
+            </div>
+
+            <div class="flex mx-8">
+              <img src="./images/Vectorkm.png" alt="" class="mx-2 w-4" />
+              <p>1-lit / 2.5 km</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center items-center w-[160px] mx-auto border rounded-3xl my-[40px] h-[50px] bg-green-500 hover:bg-green-700"
+      >
+        <h1 class="text-1xl text-white">View all cars</h1>
+      </div>
+    </section>
+
+    <!-- Cards end -->
+
+    <!-- comment start -->
+    <section class="comments bg-[#EEEEEE] py-[100px] dark:bg-[#272727]">
+      <div class="container mx-auto max-w-[1240px] px-5">
+        <div
+          class="comment__wrapper h-[479px] rounded-[20px] flex overflow-hidden"
+        >
+          <div class="bg-white w-[470px] dark:bg-[#1C1C1C] p-[70px]">
+            <div class="flex">
+              <img src="./images/Group 5google.svg" alt="google" />
+              <a
+                href="https://www.google.com/"
+                class="ml-2 text-[#4285F4] font-medium text-4 left-5"
+                >From Google</a
+              >
+            </div>
+            <h1 class="mt-4 font-medium text-[38px] left-[50px]">
+              Hear what the community is saying
+            </h1>
+            <div class="kamalak my-[30px] h-[2px]"></div>
+            <p
+              class="mt-4 font-medium text-[14px] left-[17px] text-[#555555] dark:text-[#fff]"
+            >
+              More interesting reviews on Instagram
+            </p>
+
+            <a href="https://www.instagram.com/darkdp_/">
+              <div
+                class="group btn-insta p-[2px] cursor-pointer rounded-full mt-4 inline-block"
+              >
+                <div
+                  class="group-hover:bg-transparent group-hover:text-white bg-white py-[17px] px-[59px] rounded-full inline-block"
+                >
+                  <h1
+                    class="font-insta dark:text-white font-medium text-[18px leading-[22px]"
+                  >
+                    Instagram
+                  </h1>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="w-[730px] bg-[#299764] relative overflow-hidden border-l-2 border-[#299764]"
+          >
+            <ul class="comment_list mt-[50px] flex gap-5 pl-10 duration-500">
+              <!-- dinamic comments -->
+            </ul>
+            <div
+              class="w-[84px] absolute bottom-10 right-10 z-10 flex items-center justify-between"
+            >
+              <div
+                class="w-9 h-9 slider__left rounded-full z-10 bg-white hover:bg-[#cbcaca] cursor-pointer flex items-center justify-center"
+              >
+                <i class="bx bx-chevron-left text-xl text-black"></i>
+              </div>
+              <div
+                class="w-9 h-9 slider__right rounded-full z-10 bg-white hover:bg-[#cbcaca] cursor-pointer flex items-center justify-center"
+              >
+                <i class="bx bx-chevron-right text-xl text-black"></i>
+              </div>
+            </div>
+            <div class="scrollbar ml-10 flex mt-[37px]">
+              <!-- dinamic scrollbar -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- comment end -->
+
+    <!-- Symbols start-->
+
+    <section class="container mx-auto">
+      <div class="text-2xl ml-[130px] mt-[100px]">
+        <h1>More than 50 brands of cars</h1>
+      </div>
+      <div class="flex w-full my-[20px]  justify-between mx-auto items-center">
+        <img class="ml-[120px]" src="./images/image 9.svg" alt="" />
+        <img src="./images/image 10.svg" alt="" />
+        <img src="./images/tayota.svg" alt="" />
+        <img src="./images/dodge.svg" alt="" />
+        <img src="./images/hundai.svg" alt="" />
+        <img class="mr-[130px]" src="./images/jeep.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- Symbols end -->
+
+    <!-- Start Service -->
+    <section>
+      <div>
+        <div class="mx-auto justify-center items-center mt-[120px] flex">
+          <h1 class="text-3xl">Unparalleled service</h1>
+        </div>
+
+        <div class="mx-auto justify-center items-center flex my-[30px]">
+          <p class="w-[600px] text-center">
+            Whether you are looking for Newark Airport car rental, an insurance
+            replacement vehicle or minivan to take on vacation Car rental has it
+            all.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="cards flex justify-center gap-[40px] items-center">
+          <div
+            class="shadow-md border rounded-1xl w-[500px] h-[210px] hover:bg-green-700 dark:text-white dark:bg-[#272727]"
+          >
+            <div
+              class="flex mt-[40px] ml-[20px] justify-between items-center w-[450px]"
+            >
+              <div class="w-[200px] h-[70px]">
+                <h class="text-3xl">Book online,  pay online</h>
+              </div>
+              <div>
+                <img class="mr-[]" src="./images/11.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="w-[280px] h-[50px] m-[20px]">
+              <p class="text">
+                Complete the booking process A-Z, with our easy online system
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="shadow-md border rounded-1xl w-[500px] h-[210px] hover:bg-green-700 dark:text-white dark:bg-[#272727]"
+          >
+            <div
+              class="flex mt-[40px] ml-[20px] justify-between items-center w-[450px]"
+            >
+              <div class="w-[260px] h-[70px]">
+                <h class="text-3xl">Guaranteed car  reservation</h>
+              </div>
+              <div>
+                <img class="mr-[]" src="./images/33.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="w-[310px] h-[50px] m-[20px]">
+              <p class="text">
+                When you book with Car rental, you can be confident your car
+                will be waiting for you
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div
+            class="cards flex justify-center gap-[40px] mt-[20px] items-center"
+          >
+            <div
+              class="shadow-md border rounded-1xl w-[500px] h-[200px] hover:bg-green-700 dark:text-white dark:bg-[#272727]"
+            >
+              <div
+                class="flex mt-[40px] ml-[20px] justify-between items-center w-[450px]"
+              >
+                <div class="w-[270px] h-[70px]">
+                  <h class="text-3xl">Unparalleled  customer service</h>
+                </div>
+                <div>
+                  <img class="mr-[px]" src="./images/22.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="w-[280px] h-[50px] m-[20px]">
+                <p class="text">
+                  We're here to help. We pride ourselves in our customer service
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="shadow-md border rounded-1xl w-[500px] h-[200px] hover:bg-green-700 dark:text-white dark:bg-[#272727]"
+            >
+              <div
+                class="flex mt-[40px] ml-[20px] justify-between items-center w-[450px]"
+              >
+                <div class="w-[250px] h-[70px]">
+                  <h class="text-3xl">No reservation or  booking fees</h>
+                </div>
+                <div>
+                  <img class="mr-[]" src="./images/44.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="w-[280px] h-[50px] m-[20px]">
+                <p class="text">
+                  No cancellation fees if cancelled 24 hours prior to booking
+                  time
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  End Service -->
+
+    <section class="mx-auto flex justify-center mt-[100px]">
+      <div class="flex justify-between w-[1200px] h-[500px] border rounded-2xl">
+        <div class="flex">
+          <div>
+            <div class="w-[590px] mt-[50px] ml-[30px]">
+              <h1 class="text-3xl font-bold">Car rental keeps you safe</h1>
+            </div>
+
+            <div class="w-[540px] h-[120px] m-[30px]">
+              <p>
+                The safety of our employees and renters is our number one
+                priority. In addition to being confident your vehicle is cleaned
+                and sanitized every time you rent, you can also feel confident
+                that we will take every opportunity to enhance the health and
+                safety measures currently practiced in our operations.
+              </p>
+            </div>
+
+            <div class="justify-between flex gap-3 ml-[30px] mt-[70px]">
+              <div
+                class="w-[200px] h-[160px] border rounded-2xl bg-gray-100  hover:bg-green-700 dark:bg-[#272727] dark:text-white"
+              >
+                <div class="items-ceter justify-end flex mr-[20px] mt-[30px]">
+                  <img src="./images/idish.svg" alt="" />
+                </div>
+
+                <div class="w-[160px] h-[60px] m-[20px]">
+                  <p>Every car is thoroughly sanitized and cleaned</p>
+                </div>
+              </div>
+
+              <div
+                class="hover hover:bg-green-700 dark:bg-[#272727] dark:text-white w-[200px] h-[160px] border rounded-2xl bg-gray-100"
+              >
+                <div class="items-ceter justify-end flex mr-[20px] mt-[30px]">
+                  <img src="./images/yurak.svg" alt="" />
+                </div>
+
+                <div class="w-[160px] h-[60px] m-[20px]">
+                  <p>Every car is thoroughly sanitized and cleaned</p>
+                </div>
+              </div>
+
+              <div
+                class="hover hover:bg-green-700 dark:bg-[#272727] dark:text-white w-[200px] h-[160px] border rounded-2xl bg-gray-100"
+              >
+                <div class="items-ceter justify-end flex mr-[20px] mt-[30px]">
+                  <img src="./images/fayl.svg" alt="" />
+                </div>
+
+                <div class="w-[160px] h-[60px] ml-[20px] mt-[20px]">
+                  <p>Every car is thoroughly sanitized and cleaned</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="ml-[120px] mt-[40px] z-0">
+              <img src="./images/Ellipse.svg" alt="" />
+            </div>
+
+            <div class="absolute top-[50px] left-[50px] z-30">
+              <img src="./images/usta.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer strat -->
+    <section>
+      <div class="containerm mx-auto w-[1300px] flex">
+        <div class="mt-[50px] mb-[40px]">
+          <div>
+            <img src="./images/Logo.svg" alt="" />
+          </div>
+          <div class="w-[280px] h-[100px] mt-[30px]">
+            <p>
+              Car rental offers a wide range of cars available for rent in
+              Newark EWR Airport NJ. We pride ourselves in our customer service,
+              and hassle-free renting experience.
+            </p>
+          </div>
+          <div class="w-[200px] h-[50px] mt-[100px]">
+            <h1 class="text-[20px] font-bold">
+              © 2022 Car rental Terms & Conditions
+            </h1>
+          </div>
+        </div>
+
+        <div class="mb-[40px]">
+          <div class="flex ml-[100px] mt-[60px] gap-[110px]">
+            <div class="">
+              <h1 class="text-[20px] font-bold">Main</h1>
+
+              <p class="mt-[10px]">My Bookings</p>
+              <p class="mt-[10px]">Reservation</p>
+            </div>
+
+            <div class="">
+              <h1 class="text-[20px] font-bold">Categories</h1>
+
+              <p class="mt-[10px]">Compact</p>
+              <p class="mt-[10px]">Sports cars</p>
+              <p class="mt-[10px]"><a href="#">Vans </a></p>
+            </div>
+
+            <div>
+              <h1 class="text-[20px] font-bold">Company</h1>
+              <p class="mt-[10px]">About us</p>
+              <p class="mt-[10px]">Careers</p>
+              <p class="mt-[10px]">News</p>
+              <p class="mt-[10px]">Contact us</p>
+            </div>
+
+            <div>
+              <h1 class="text-[20px] font-bold">Our Locations</h1>
+              <p class="mt-[10px]">2118 Thornridge Cir. Syracuse</p>
+              <p class="mt-[10px]">4140 Parker Rd. Allentown</p>
+              <p class="mt-[10px]">4517 Washington Ave.</p>
+            </div>
+          </div>
+
+          <div class="bg-black w-[850px] ml-[100px] mt-[40px] h-[1px]"></div>
+
+          <div class="flex ml-[100px] gap-[40px]">
+            <div class="ml-[px] mt-[40px]">
+              <h1 class="text-[20px] mt-[10px] font-bold">Contact</h1>
+              <p class="mt-[10px]">+1 855 420 0000</p>
+              <p class="mt-[10px]">carrental@gmail.com</p>
+            </div>
+
+            <div class="ml-[px] mt-[40px]">
+              <h1 class="text-[20px] mt-[10px] font-bold">
+                Hours of operation
+              </h1>
+              <p class="mt-[10px]">8:00 - 21:00 Mon-Sat</p>
+              <p class="mt-[10px]">9:00 - 15:00 Sundays</p>
+            </div>
+
+            <div class="ml-[px] mt-[40px]">
+              <h1 class="text-[20px] mt-[10px] font-bold">Social network</h1>
+              <div class="flex gap-[15px] mt-[20px]">
+                <a href="https://www.instagram.com/darkdp_/">
+                  <div
+                    class="w-[40px] h-[40px] border rounded-full bg-black justify-center items-center flex"
+                  >
+                    <img src="./images/instagram.svg" alt="" />
+                  </div>
+                </a>
+
+                <a href="https://twitter.com/?lang=ru">
+                  <div
+                    class="w-[40px] h-[40px] border rounded-full bg-black justify-center items-center flex"
+                  >
+                    <img src="./images/Vector.svg" alt="" />
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435741%7Ce%7Cfaccebook%7C&placement=&creative=477437435741&keyword=faccebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-299440594705%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQiAxbefBhDfARIsAL4XLRp-CwzPVR5NoYPlaLIycjUc1GX666xg4BqveV9tgXED52cFFL_p6xgaAr_KEALw_wcB"
+                >
+                  <div
+                    class="w-[40px] h-[40px] border rounded-full bg-black justify-center items-center flex"
+                  >
+                    <img src="./images/Vector (1).svg" alt="" />
+                  </div>
+                </a>
+
+                <a href="https://www.whatsapp.com/?lang=ru">
+                  <div
+                    class="w-[40px] h-[40px] border rounded-full bg-black justify-center items-center flex"
+                  >
+                    <img src="./images/telefon.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer end -->
+  </body>
+
+  <script src="./scripts/utils.js"></script>
+  <script src="./scripts/main.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper__right",
+        prevEl: ".swiper__left",
+      },
+
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
+      },
+      // mousewheel: {
+      //   invert: true,
+      // },
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+    });
+  </script>
+</html>
