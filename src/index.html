@@ -31,11 +31,13 @@
       class="h-[94px] border-b-[1.5px] border-[#E5E7EA] shadow-2xl flex justify-center items-center"
     >
       <div class="container mx-auto max-w-[1200px]">
-        <nav class="nav flex items-center">
+        <nav
+          class="nav flex items-center xl lg:justify-between sm:justify-between"
+        >
           <img src="./images/Logo.svg" alt="logo" class="cursor-pointer" />
           <ul class="nav__list flex items-center ml-5 z-40">
             <li
-              class="nav__list-item flex px-4 py-[18px] dark:hover:bg-[#272727] cursor-pointer hover:bg-[#F5F5F5] hover:rounded-full duration-300"
+              class="nav__list-item flex px-4 py-[18px] dark:hover:bg-[#272727] xl:block lg-hidden sm:hidden block cursor-pointer hover:bg-[#F5F5F5] hover:rounded-full duration-300"
             >
               <a
                 href="#"
@@ -43,43 +45,46 @@
                 >Categories</a
               >
             </li>
-            <li
-              class="nav__list-item group relative px-4 py-[18px] w-[147px] flex items-center justify-around cursor-pointer dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-full duration-300"
-            >
-              <a
-                href="#"
-                class="text-[18px] w-full h-full leading-[22px] font-medium"
-                >About Us</a
+
+            <div class="xl:block lg-hidden sm:hidden">
+              <li
+                class="nav__list-item group relative px-4 py-[18px] w-[147px] flex items-center justify-around cursor-pointer dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-full duration-300"
               >
-              <i
-                class="bx bx-chevron-down text-xl group-hover:bx-chevron-up"
-              ></i>
-              <div
-                class="absolute hidden group-hover:block top-0 pt-[70px] left-0"
-              >
-                <ul
-                  class="dropdown z-20 bg-white w-[147px] p-[10px] duration-300 backdrop:blur-md dark:bg-[#1C1C1C] rounded-[20px] dark:shadow-white dark:shadow-sm"
+                <a
+                  href="#"
+                  class="text-[18px] w-full h-full xl:block lg-hidden md:hidden sm:hidden leading-[22px] font-medium"
+                  >About Us</a
                 >
-                  <li
-                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                <i
+                  class="bx bx-chevron-down text-xl group-hover:bx-chevron-up"
+                ></i>
+                <div
+                  class="absolute hidden group-hover:block top-0 pt-[70px] left-0"
+                >
+                  <ul
+                    class="dropdown z-20 bg-white w-[147px] p-[10px] duration-300 backdrop:blur-md dark:bg-[#1C1C1C] rounded-[20px] dark:shadow-white dark:shadow-sm"
                   >
-                    <a href="#" class="w-full h-full"> News </a>
-                  </li>
-                  <li
-                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
-                  >
-                    <a href="#" class="w-full h-full"> Careers </a>
-                  </li>
-                  <li
-                    class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
-                  >
-                    <a href="#" class="w-full h-full"> Locations </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+                    <li
+                      class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                    >
+                      <a href="#" class="w-full h-full"> News </a>
+                    </li>
+                    <li
+                      class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                    >
+                      <a href="#" class="w-full h-full"> Careers </a>
+                    </li>
+                    <li
+                      class="h-[58px] text-[18px] leading-[22px] font-medium flex items-center py-[18px] px-4 dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-xl duration-300"
+                    >
+                      <a href="#" class="w-full h-full"> Locations </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
             <li
-              class="nav__list-item relative group flex items-center justify-around px-4 py-[18px] cursor-pointer w-[169px] dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-full duration-300"
+              class="nav__list-item xl:block lg-hidden md:hidden sm:hidden relative group flex items-center justify-around px-4 py-[18px] cursor-pointer w-[169px] dark:hover:bg-[#272727] hover:bg-[#F5F5F5] hover:rounded-full duration-300"
             >
               <a
                 href="#"
@@ -109,12 +114,12 @@
             </li>
           </ul>
           <h1
-            class="inline-block cursor-pointer text-[18px] leading-[22px] font-semibold ml-[196px] duration-300"
+            class="inline-block xl:block lg-hidden md:hidden sm:hidden cursor-pointer text-[18px] leading-[22px] font-semibold ml-[196px] duration-300"
           >
             +1 855 420 0000
           </h1>
           <div
-            class="mode dark:bg-[#272727] p-[21px] ml-6 bg-[#F5F5F5] dark:hover:bg-[#636161] hover:bg-[#e2dfdf] duration-300 cursor-pointer rounded-full flex justify-center items-center"
+            class="mode xl:block lg-hidden md:hidden sm:hidden dark:bg-[#272727] p-[21px] ml-6 bg-[#F5F5F5] dark:hover:bg-[#636161] hover:bg-[#e2dfdf] duration-300 cursor-pointer rounded-full flex justify-center items-center"
           >
             <img
               id="mode-icon"
@@ -124,28 +129,127 @@
             />
           </div>
           <div
-            class="loginbtn group btn bg-[#299764] cursor-pointer w-[142px] h-[58px] rounded-full hover:bg-[#077743] active:bg-[#F5F5F5] flex justify-center items-center ml-4"
+            class="loginbtn xl:block lg-hidden md:hidden sm:hidden group btn bg-[#299764] cursor-pointer w-[142px] h-[58px] rounded-full hover:bg-[#077743] active:bg-[#F5F5F5] flex justify-center items-center ml-4"
           >
-            <h1
-              class="group-active:text-black text-white inline-block text-[18px] leading-[22px] font-medium"
+            <div class="flex justify-center items-center mt-[15px]">
+              <h1
+                class="group-active:text-black text-white inline-block text-[18px] leading-[22px] font-medium"
+              >
+                Login
+              </h1>
+              <img
+                src="./images/exit-icon.svg"
+                alt="exit-icon"
+                class="ml-[11px]"
+              />
+            </div>
+          </div>
+
+          <div
+            class="btn-menu flex xl:hidden cursor-pointer sm:justify-end items-center"
+          >
+            <svg
+              width="40"
+              height="22"
+              viewBox="0 0 40 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              Login
-            </h1>
-            <img
-              src="./images/exit-icon.svg"
-              alt="exit-icon"
-              class="ml-[11px]"
-            />
+              <line
+                x1="1"
+                y1="1"
+                x2="39"
+                y2="1"
+                class="dark:stroke-white"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <line
+                x1="1"
+                y1="11"
+                x2="39"
+                y2="11"
+                class="dark:stroke-white"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <line
+                x1="1"
+                y1="21"
+                x2="39"
+                y2="21"
+                class="dark:stroke-white"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
           </div>
         </nav>
       </div>
     </header>
     <!-- Header finihsed -->
-      <!-- modal started -->
-    <section>
-
+    <!-- menu -->
+    <div
+      class="menu-md hidden duration-500 w-screen h-screen mx-auto z-40 fixed top-0"
+    >
       <div
-        class="modal-window hidden bg-[#00000081] w-full min-h-screen fixed bottom-10 z-50 backdrop-blur-sm flex"
+        class="menu-content w-[80%] md:w-[60%] h-screen p-5 mr-0 ml-auto bg-[#1C1C1C] text-white"
+      >
+        <div class="flex justify-between items-center pb-14">
+          <img src="./images/Logo.svg" alt="logo" class="w-[150px]" />
+          <i
+            class="cancel bx bx-x p-3 rounded-full bg-[#272727] text-white"
+          ></i>
+        </div>
+        <div class="flex flex-col justify-between items-start gap-y-4">
+          <h1>Categories</h1>
+          <ul class="flex flex-col gap-1">
+            <h1 class="">About us</h1>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Locations</a></li>
+          </ul>
+
+          <ul class="flex flex-col gap-1">
+            <h1 class="">Help center</h1>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <ul
+          class="flex justify-between items-center w-full h-full mb-0 pb-20 mt-auto"
+        >
+          <li
+            class="raqam hidden md:block px-4 py-2 rounded-full duration-300 active:bg-[#299764]"
+          >
+            <a href="#">+1 855 420 0000</a>
+          </li>
+          <li class="menu-theme">
+            <i
+              class="themeicon bx bxs-sun mode p-4 bg-[#272727] rounded-full text-[#555555] active:bg-[#299764] active:text-white duration-300"
+            ></i>
+          </li>
+          <li class="text-white">
+            <div
+              class="btn-login btn-login-menu flex items-center gap-[11px] py-[14px] duration-300 hover:bg-[#077743] px-[30px] rounded-full bg-[#299764] active:bg-[#F5F5F5] active:text-black"
+            >
+              <h1 class="duration-300">Login</h1>
+              <img src="./images/Login.svg" alt="login" class="duration-300" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- menu end -->
+
+    <!-- modal started -->
+    <section>
+      <div
+        class="modal-window hidden w-full min-h-[600px] fixed bottom-10 z-50 backdrop-blur-sm flex"
       >
         <div
           class="min-w-[600px] dark:bg-[#272727] max-h-[600px] relative bg-white mx-auto mt-40 rounded-2xl overflow-hidden shadow-md shadow-slate-900"
@@ -217,7 +321,7 @@
         </div>
       </div>
     </section>
-          <!-- modal finished -->
+    <!-- modal finished -->
 
     <!-- Karusel strat-->
     <section class="slider bg-gray-100 relative dark:bg-[#272727]">
@@ -250,14 +354,14 @@
             </div>
           </div>
           <div
-            class="absolute w-[600px] bg-white left-[25%] -bottom-[30px] z-30 rounded-full"
+            class="absolute xl:w-[600px] lg:w-[450px] sm:w-[250px] md:w-[300px] bg-white left-[25%] -bottom-[30px] z-30 rounded-full"
           >
             <div class="relative">
               <input
                 type="text"
                 id="search"
                 placeholder="Find the car of your dreams"
-                class="focus:ring-2 dark:placeholder:text-[#555555] bg-transparent flex-grow text-[#000] focus:ring-[#299764] h-[66px] font-medium text-[18px] shadow-[0px_4px_10px_rgba(0,0,0,0.15)] leading-[22px] w-[600px] py-[18px] px-[30px] rounded-full outline-none"
+                class="focus:ring-2 dark:placeholder:text-[#555555] bg-transparent flex-grow text-[#000] focus:ring-[#299764] h-[66px] font-medium text-[18px] shadow-[0px_4px_10px_rgba(0,0,0,0.15)] leading-[22px] lg:w-[450px] sm:w-[300px] xl:w-[600px] py-[18px] px-[30px] rounded-full outline-none"
               />
               <div
                 class="icon w-[58px] hover:bg-[#077743] flex items-center justify-center text-2xl text-white cursor-pointer h-[58px] absolute top-1 right-1 rounded-full bg-[#299764]"
@@ -272,312 +376,112 @@
     <!-- Karusel end -->
 
     <!-- Cards start -->
-    <section class="">
-      <div>
-        <div class="justify-center items-center flex mx-auto mt-[120px]">
-          <h1 class="text-4xl">Choose the car of your dreams</h1>
-        </div>
-
-        <div
-          class="justify-center items-center flex mx-auto w-[570px] mt-[30px]"
-        >
-          <p class="text-center">
+    <section class="choose">
+      <div class="container mx-auto max-w-[1240px] px-5">
+        <div class="choose__wrapper mt-[133px]">
+          <h1
+            class="text-center font-semibold w-[232px] mx-auto sm:w-full text-[24px] leading-[29px] sm:text-[36px] sm:leading-[44px]"
+          >
+            Choose the car of your dreams
+          </h1>
+          <p
+            class="text-center font-normal w-[321px] text-[12px] leading-[15px] sm:text-[16px] sm:leading-[24px] mt-[10px] text-[#555555] dark:text-white sm:w-[575px] mx-auto"
+          >
             We provide our customers with the most incredible driving emotions.
-             That is why there are only world-class cars in our fleet
+            That is why there are only world-class cars in our fleet
           </p>
-        </div>
+          <div class="filter__buttons flex gap-4 justify-center items-center">
+            <div
+              class="fill-btn filter__buttons-active mt-8 group bg-transparent cursor-pointer py-[14px] sm:py-[19px] text-[14px] leading-[17px] sm:text-[18px] sm:leading-[22px] font-medium px-5 sm:px-10 rounded-full hover:bg-[#e0e1e1] dark:hover:bg-[#272727] active:bg-[#F5F5F5] flex justify-center items-center border border-spacing-[1.5px] border-[#E5E7EA]"
+            >
+              Compact
+            </div>
+            <div
+              class="fill-btn mt-8 group bg-transparent cursor-pointer py-[14px] sm:py-[19px] text-[14px] leading-[17px] sm:text-[18px] sm:leading-[22px] font-medium px-5 sm:px-10 rounded-full hover:bg-[#e0e1e1] dark:hover:bg-[#272727] active:bg-[#F5F5F5] flex justify-center items-center border border-spacing-[1.5px] border-[#E5E7EA]"
+            >
+              Sports cars
+            </div>
 
-        <div class="flex justify-center items-center mt-[35px]">
-          <div
-            class="w-[155px] border rounded-3xl bg-green-500 hover:bg-green-600 h-[58px] justify-center items-center flex"
+            <div
+              class="fill-btn mt-8 group bg-transparent cursor-pointer py-[14px] sm:py-[19px] text-[14px] leading-[17px] sm:text-[18px] sm:leading-[22px] font-medium px-5 sm:px-10 rounded-full hover:bg-[#e0e1e1] dark:hover:bg-[#272727] active:bg-[#F5F5F5] flex justify-center items-center border border-spacing-[1.5px] border-[#E5E7EA]"
+            >
+              Vans
+            </div>
+          </div>
+          <ul
+            class="car__cards justify-center items-center flex flex-wrap gap-[10px] sm:gap-[19px] mt-6 mb-10"
           >
-            <h1 class="text-2xl">Compact</h1>
-          </div>
+            <!-- dinamic cards -->
+          </ul>
           <div
-            class="w-[170px] ml-4 border rounded-3xl hover:bg-green-600 h-[58px] justify-center items-center flex"
+            class="all-btn filter__buttons-active mt-8 w-[180px] text-center mx-auto mb-[100px] sm:mb-40 h-[58px] block group bg-transparent cursor-pointer text-[18px] leading-[22px] font-medium py-[19px] hover:bg-[#e0e1e1] dark:hover:bg-[#272727] px-[30px] rounded-full active:bg-[#F5F5F5] items-center border border-spacing-[1.5px] border-[#E5E7EA]"
           >
-            <h1 class="text-2xl">Sports cars</h1>
-          </div>
-          <div
-            class="w-[119px] ml-4 border rounded-3xl hover:bg-green-600 h-[58px] justify-center items-center flex"
-          >
-            <h1 class="text-2xl">Vans</h1>
+            View all cars
           </div>
         </div>
-      </div>
-
-      <div class="cards container mt-[30px] col-4 justify-center mx-auto flex">
-        <div
-          class="dark:text-white dark:bg-[#272727] w-[350px] m-5 h-[433px] border hover:bg-green-700 rounded-2xl shadow-md bg-[#F5F5F5]"
-        >
-          <div class="m-[30px]">
-            <h1 class="text-3xl font-bold">Ford Fiesta</h1>
-            <p class="mt-2">Economy Car</p>
-          </div>
-
-          <div><img src="./images/image 13fiesta.png" alt="" /></div>
-
-          <div class="flex mx-auto">
-            <div class="flex ml-8">
-              <img src="./images/Iconodamcha.png" alt="" class="mx-2 w-4" />
-              <p class="">5 Seats</p>
-            </div>
-
-            <div class="flex mx-12">
-              <img src="./images/Vectorautamatic.png" alt="" class="mx-2 w-4" />
-              <p>Automatic</p>
-            </div>
-          </div>
-
-          <div class="flex mx-auto my-6">
-            <div class="flex ml-8">
-              <img src="./images/Iconyears.png" alt="" class="mx-2 w-4" />
-              <p>21+ Years</p>
-            </div>
-
-            <div class="flex mx-8">
-              <img src="./images/Vectorkm.png" alt="" class="mx-2 w-4" />
-              <p>1-lit / 2.5 km</p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="dark:text-white dark:bg-[#272727] w-[350px] m-5 h-[433px] border hover:bg-green-700 rounded-2xl shadow-md bg-[#F5F5F5]"
-        >
-          <div class="m-[30px]">
-            <h1 class="text-3xl font-bold">Nissan Versa</h1>
-            <p class="mt-2">Compact Car</p>
-          </div>
-
-          <div><img src="./images/image 13versa.png" alt="" /></div>
-
-          <div class="flex mx-auto">
-            <div class="flex ml-8">
-              <img src="./images/Iconodamcha.png" alt="" class="mx-2 w-4" />
-              <p class="">5 Seats</p>
-            </div>
-
-            <div class="flex mx-12">
-              <img src="./images/Vectorautamatic.png" alt="" class="mx-2 w-4" />
-              <p>Automatic</p>
-            </div>
-          </div>
-
-          <div class="flex mx-auto my-6">
-            <div class="flex ml-8">
-              <img src="./images/Iconyears.png" alt="" class="mx-2 w-4" />
-              <p>21+ Years</p>
-            </div>
-
-            <div class="flex mx-8">
-              <img src="./images/Vectorkm.png" alt="" class="mx-2 w-4" />
-              <p>1-lit / 2.5 km</p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="dark:text-white dark:bg-[#272727] w-[350px] m-5 h-[433px] border hover:bg-green-700 rounded-2xl shadow-md bg-[#F5F5F5]"
-        >
-          <div class="m-[30px]">
-            <h1 class="text-3xl font-bold">Toyota Corolla</h1>
-            <p class="mt-2">Mid-size Car</p>
-          </div>
-
-          <div><img src="./images/image 13corolla.png" alt="" /></div>
-
-          <div class="flex mx-auto">
-            <div class="flex ml-8">
-              <img src="./images/Iconodamcha.png" alt="" class="mx-2 w-4" />
-              <p class="">5 Seats</p>
-            </div>
-
-            <div class="flex mx-12">
-              <img src="./images/Vectorautamatic.png" alt="" class="mx-2 w-4" />
-              <p>Automatic</p>
-            </div>
-          </div>
-
-          <div class="flex mx-auto my-6">
-            <div class="flex ml-8">
-              <img src="./images/Iconyears.png" alt="" class="mx-2 w-4" />
-              <p>21+ Years</p>
-            </div>
-
-            <div class="flex mx-8">
-              <img src="./images/Vectorkm.png" alt="" class="mx-2 w-4" />
-              <p>1-lit / 2.5 km</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="cards container col-4 mx-auto justify-center flex">
-        <div
-          class="dark:text-white dark:bg-[#272727] w-[350px] m-5 h-[433px] border hover:bg-green-700 rounded-2xl shadow-md bg-[#F5F5F5]"
-        >
-          <div class="m-[30px]">
-            <h1 class="text-3xl font-bold">Nissan Rogue</h1>
-            <p class="mt-2">Mid-size SUV</p>
-          </div>
-
-          <div><img src="./images/image 13rogue.png" alt="" /></div>
-
-          <div class="flex mx-auto">
-            <div class="flex ml-8">
-              <img src="./images/Iconodamcha.png" alt="" class="mx-2 w-4" />
-              <p class="">5 Seats</p>
-            </div>
-
-            <div class="flex mx-12">
-              <img src="./images/Vectorautamatic.png" alt="" class="mx-2 w-4" />
-              <p>Automatic</p>
-            </div>
-          </div>
-
-          <div class="flex mx-auto my-6">
-            <div class="flex ml-8">
-              <img src="./images/Iconyears.png" alt="" class="mx-2 w-4" />
-              <p>21+ Years</p>
-            </div>
-
-            <div class="flex mx-8">
-              <img src="./images/Vectorkm.png" alt="" class="mx-2 w-4" />
-              <p>1-lit / 2.5 km</p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="dark:text-white dark:bg-[#272727] w-[350px] m-5 h-[433px] border rounded-2xl hover:bg-green-700 shadow-md bg-[#F5F5F5]"
-        >
-          <div class="m-[30px]">
-            <h1 class="text-3xl font-bold">Chevy Traverse</h1>
-            <p class="mt-2">EFull-size SUV</p>
-          </div>
-
-          <div><img src="./images/image 13traverse.png" alt="" /></div>
-
-          <div class="flex mx-auto">
-            <div class="flex ml-8">
-              <img src="./images/Iconodamcha.png" alt="" class="mx-2 w-4" />
-              <p class="">5 Seats</p>
-            </div>
-
-            <div class="flex mx-12">
-              <img src="./images/Vectorautamatic.png" alt="" class="mx-2 w-4" />
-              <p>Automatic</p>
-            </div>
-          </div>
-
-          <div class="flex mx-auto my-6">
-            <div class="flex ml-8">
-              <img src="./images/Iconyears.png" alt="" class="mx-2 w-4" />
-              <p>21+ Years</p>
-            </div>
-
-            <div class="flex mx-8">
-              <img src="./images/Vectorkm.png" alt="" class="mx-2 w-4" />
-              <p>1-lit / 2.5 km</p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="dark:text-white dark:bg-[#272727] w-[350px] m-5 h-[433px] border rounded-2xl hover:bg-green-700 shadow-md bg-[#F5F5F5]"
-        >
-          <div class="m-[30px]">
-            <h1 class="text-3xl font-bold">Nissan Altima</h1>
-            <p class="mt-2">Full-size Car</p>
-          </div>
-
-          <div><img src="./images/image 13altima.png" alt="" /></div>
-
-          <div class="flex mx-auto">
-            <div class="flex ml-8">
-              <img src="./images/Iconodamcha.png" alt="" class="mx-2 w-4" />
-              <p class="">5 Seats</p>
-            </div>
-
-            <div class="flex mx-12">
-              <img src="./images/Vectorautamatic.png" alt="" class="mx-2 w-4" />
-              <p>Automatic</p>
-            </div>
-          </div>
-
-          <div class="flex mx-auto my-6">
-            <div class="flex ml-8">
-              <img src="./images/Iconyears.png" alt="" class="mx-2 w-4" />
-              <p>21+ Years</p>
-            </div>
-
-            <div class="flex mx-8">
-              <img src="./images/Vectorkm.png" alt="" class="mx-2 w-4" />
-              <p>1-lit / 2.5 km</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="flex justify-center items-center w-[160px] mx-auto border rounded-3xl my-[40px] h-[50px] bg-green-500 hover:bg-green-700"
-      >
-        <h1 class="text-1xl text-white">View all cars</h1>
       </div>
     </section>
 
     <!-- Cards end -->
 
     <!-- comment start -->
-    <section class="comments bg-[#EEEEEE] py-[100px] dark:bg-[#272727]">
+    <section class="comments bg-[#EEEEEE] py-5 sm:py-[100px] dark:bg-[#272727]">
       <div class="container mx-auto max-w-[1240px] px-5">
         <div
-          class="comment__wrapper h-[479px] rounded-[20px] flex overflow-hidden"
+          class="comment__wrapper h-auto xl:h-[479px] rounded-[20px] flex sm:block xl:flex flex-wrap sm:flex-nowrap overflow-hidden"
         >
-          <div class="bg-white w-[470px] dark:bg-[#1C1C1C] p-[70px]">
-            <div class="flex">
-              <img src="./images/Group 5google.svg" alt="google" />
-              <a
-                href="https://www.google.com/"
-                class="ml-2 text-[#4285F4] font-medium text-4 left-5"
-                >From Google</a
-              >
-            </div>
-            <h1 class="mt-4 font-medium text-[38px] left-[50px]">
-              Hear what the community is saying
-            </h1>
-            <div class="kamalak my-[30px] h-[2px]"></div>
-            <p
-              class="mt-4 font-medium text-[14px] left-[17px] text-[#555555] dark:text-[#fff]"
-            >
-              More interesting reviews on Instagram
-            </p>
-
-            <a href="https://www.instagram.com/darkdp_/">
-              <div
-                class="group btn-insta p-[2px] cursor-pointer rounded-full mt-4 inline-block"
-              >
-                <div
-                  class="group-hover:bg-transparent group-hover:text-white bg-white py-[17px] px-[59px] rounded-full inline-block"
-                >
-                  <h1
-                    class="font-insta dark:text-white font-medium text-[18px leading-[22px]"
+          <div
+            class="bg-white w-full xl:w-[470px] dark:bg-[#1C1C1C] p-6 sm:p-[30px] xl:p-[70px]"
+          >
+            <div class="block sm:flex justify-between items-center xl:block">
+              <div>
+                <div class="flex">
+                  <img src="./images/Google.svg" alt="google" />
+                  <a
+                    href="https://www.google.com/"
+                    class="ml-2 text-[#4285F4] font-medium text-4 left-5"
+                    >From Google</a
                   >
-                    Instagram
-                  </h1>
+                </div>
+                <h1
+                  class="mt-4 font-medium text-[38px] leading-[50px] sm:text-[24px] sm:leading-[36px] xl:text-[38px] xl:leading-[50px] w-[306px]"
+                >
+                  Hear what the community is saying
+                </h1>
+              </div>
+              <div
+                class="kamalak w-[318px] sm:w-[108px] xl:w-[330px] my-[30px] h-[2px] sm:rotate-90 xl:rotate-180"
+              ></div>
+              <div>
+                <p
+                  class="mt-4 font-medium text-[14px] leading-[17px] text-[#555555] dark:text-[#fff]"
+                >
+                  More interesting reviews on Instagram
+                </p>
+                <div
+                  class="group btn-insta p-[2px] cursor-pointer rounded-full mt-4 inline-block"
+                >
+                  <div
+                    class="group-hover:bg-transparent group-hover:text-white bg-white py-[17px] px-[59px] rounded-full inline-block"
+                  >
+                    <h1
+                      class="font-insta font-medium text-[18px leading-[22px]"
+                    >
+                      Instagram
+                    </h1>
+                  </div>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
           <div
-            class="w-[730px] bg-[#299764] relative overflow-hidden border-l-2 border-[#299764]"
+            class="w-[730px] sm:w-full xl:w-[730px] sm:h-[459px] xl:h-auto h-auto bg-[#299764] relative pl-4 pb-4 sm:pb-0 sm:pl-6 xl:pl-10 overflow-hidden border-l-2 border-[#299764]"
           >
-            <ul class="comment_list mt-[50px] flex gap-5 pl-10 duration-500">
+            <ul class="comment_list mt-5 sm:mt-[50px] flex gap-5 duration-500">
               <!-- dinamic comments -->
             </ul>
             <div
-              class="w-[84px] absolute bottom-10 right-10 z-10 flex items-center justify-between"
+              class="w-[84px] hidden absolute bottom-10 right-10 z-10 sm:flex items-center justify-between"
             >
               <div
                 class="w-9 h-9 slider__left rounded-full z-10 bg-white hover:bg-[#cbcaca] cursor-pointer flex items-center justify-center"
@@ -590,7 +494,7 @@
                 <i class="bx bx-chevron-right text-xl text-black"></i>
               </div>
             </div>
-            <div class="scrollbar ml-10 flex mt-[37px]">
+            <div class="scrollbar sm:ml-10 flex mt-[37px]">
               <!-- dinamic scrollbar -->
             </div>
           </div>
@@ -605,7 +509,7 @@
       <div class="text-2xl ml-[130px] mt-[100px]">
         <h1>More than 50 brands of cars</h1>
       </div>
-      <div class="flex w-full my-[20px]  justify-between mx-auto items-center">
+      <div class="flex w-full my-[20px] justify-between mx-auto items-center">
         <img class="ml-[120px]" src="./images/image 9.svg" alt="" />
         <img src="./images/image 10.svg" alt="" />
         <img src="./images/tayota.svg" alt="" />
@@ -633,10 +537,12 @@
         </div>
       </div>
 
-      <div>
-        <div class="cards flex justify-center gap-[40px] items-center">
+      <div class="container">
+        <div
+          class="cards xl:ml-[150px] grid lg:grid-cols-2  sm:grid-cols-1 xl:justify-center flex"
+        >
           <div
-            class="shadow-md border rounded-1xl w-[500px] h-[210px] hover:bg-green-700 dark:text-white dark:bg-[#272727]"
+            class="shadow-md border mt-[20px] rounded-1xl w-[500px] h-[210px] hover:bg-green-700 dark:text-white dark:bg-[#272727]"
           >
             <div
               class="flex mt-[40px] ml-[20px] justify-between items-center w-[450px]"
@@ -657,7 +563,7 @@
           </div>
 
           <div
-            class="shadow-md border rounded-1xl w-[500px] h-[210px] hover:bg-green-700 dark:text-white dark:bg-[#272727]"
+            class="shadow-md mt-[20px] border rounded-1xl w-[500px] h-[210px] hover:bg-green-700 dark:text-white dark:bg-[#272727]"
           >
             <div
               class="flex mt-[40px] ml-[20px] justify-between items-center w-[450px]"
@@ -677,64 +583,60 @@
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="">
           <div
-            class="cards flex justify-center gap-[40px] mt-[20px] items-center"
+            class="shadow-md border mt-[20px] rounded-1xl w-[500px] h-[200px] hover:bg-green-700 dark:text-white dark:bg-[#272727]"
           >
             <div
-              class="shadow-md border rounded-1xl w-[500px] h-[200px] hover:bg-green-700 dark:text-white dark:bg-[#272727]"
+              class="flex mt-[40px] ml-[20px] justify-between items-center w-[450px]"
             >
-              <div
-                class="flex mt-[40px] ml-[20px] justify-between items-center w-[450px]"
-              >
-                <div class="w-[270px] h-[70px]">
-                  <h class="text-3xl">Unparalleled  customer service</h>
-                </div>
-                <div>
-                  <img class="mr-[px]" src="./images/22.svg" alt="" />
-                </div>
+              <div class="w-[270px] h-[70px]">
+                <h class="text-3xl">Unparalleled  customer service</h>
               </div>
-
-              <div class="w-[280px] h-[50px] m-[20px]">
-                <p class="text">
-                  We're here to help. We pride ourselves in our customer service
-                </p>
+              <div>
+                <img class="mr-[px]" src="./images/22.svg" alt="" />
               </div>
             </div>
 
-            <div
-              class="shadow-md border rounded-1xl w-[500px] h-[200px] hover:bg-green-700 dark:text-white dark:bg-[#272727]"
-            >
-              <div
-                class="flex mt-[40px] ml-[20px] justify-between items-center w-[450px]"
-              >
-                <div class="w-[250px] h-[70px]">
-                  <h class="text-3xl">No reservation or  booking fees</h>
-                </div>
-                <div>
-                  <img class="mr-[]" src="./images/44.svg" alt="" />
-                </div>
-              </div>
-
-              <div class="w-[280px] h-[50px] m-[20px]">
-                <p class="text">
-                  No cancellation fees if cancelled 24 hours prior to booking
-                  time
-                </p>
-              </div>
+            <div class="w-[280px] h-[50px] m-[20px]">
+              <p class="text">
+                We're here to help. We pride ourselves in our customer service
+              </p>
             </div>
           </div>
+
+          <div
+            class="shadow-md border mt-[20px] rounded-1xl w-[500px] h-[200px] hover:bg-green-700 dark:text-white dark:bg-[#272727]"
+          >
+            <div
+              class="flex mt-[40px] ml-[20px] justify-between items-center w-[450px]"
+            >
+              <div class="w-[250px] h-[70px]">
+                <h class="text-3xl">No reservation or  booking fees</h>
+              </div>
+              <div>
+                <img class="mr-[]" src="./images/44.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="w-[280px] h-[50px] m-[20px]">
+              <p class="text">
+                No cancellation fees if cancelled 24 hours prior to booking time
+              </p>
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>
     <!--  End Service -->
 
     <section class="mx-auto flex justify-center mt-[100px]">
-      <div class="flex justify-between w-[1200px] h-[500px] border rounded-2xl">
+      <div
+        class="flex justify-between w-[1200px] xl:h-[500px] sm:h-[900px] border rounded-2xl"
+      >
         <div class="flex">
-          <div>
+          <div class="">
             <div class="w-[590px] mt-[50px] ml-[30px]">
               <h1 class="text-3xl font-bold">Car rental keeps you safe</h1>
             </div>
@@ -749,9 +651,11 @@
               </p>
             </div>
 
-            <div class="justify-between flex gap-3 ml-[30px] mt-[70px]">
+            <div
+              class="justify-between grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cold-1 gap-3 ml-[30px] mt-[70px]"
+            >
               <div
-                class="w-[200px] h-[160px] border rounded-2xl bg-gray-100  hover:bg-green-700 dark:bg-[#272727] dark:text-white"
+                class="w-[200px] xl:m-[1px] h-[160px] border rounded-2xl bg-gray-100 hover:bg-green-700 dark:bg-[#272727] dark:text-white"
               >
                 <div class="items-ceter justify-end flex mr-[20px] mt-[30px]">
                   <img src="./images/idish.svg" alt="" />
@@ -763,7 +667,7 @@
               </div>
 
               <div
-                class="hover hover:bg-green-700 dark:bg-[#272727] dark:text-white w-[200px] h-[160px] border rounded-2xl bg-gray-100"
+                class="hover xl:m-[1px] hover:bg-green-700 dark:bg-[#272727] dark:text-white w-[200px] h-[160px] border rounded-2xl bg-gray-100"
               >
                 <div class="items-ceter justify-end flex mr-[20px] mt-[30px]">
                   <img src="./images/yurak.svg" alt="" />
@@ -775,7 +679,7 @@
               </div>
 
               <div
-                class="hover hover:bg-green-700 dark:bg-[#272727] dark:text-white w-[200px] h-[160px] border rounded-2xl bg-gray-100"
+                class="hover xl:m-[1px] hover:bg-green-700 dark:bg-[#272727] dark:text-white w-[200px] h-[160px] border rounded-2xl bg-gray-100"
               >
                 <div class="items-ceter justify-end flex mr-[20px] mt-[30px]">
                   <img src="./images/fayl.svg" alt="" />
@@ -875,39 +779,110 @@
             <div class="ml-[px] mt-[40px]">
               <h1 class="text-[20px] mt-[10px] font-bold">Social network</h1>
               <div class="flex gap-[15px] mt-[20px]">
-                <a href="https://www.instagram.com/darkdp_/">
-                  <div
-                    class="w-[40px] h-[40px] border rounded-full bg-black justify-center items-center flex"
+                <div class="flex gap-[15px]">
+                  <a
+                    href="#"
+                    class="logo_insta duration-300 group w-10 flex justify-center items-center h-10 rounded-full bg-black dark:bg-white"
                   >
-                    <img src="./images/instagram.svg" alt="" />
-                  </div>
-                </a>
-
-                <a href="https://twitter.com/?lang=ru">
-                  <div
-                    class="w-[40px] h-[40px] border rounded-full bg-black justify-center items-center flex"
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 1.80723C12.6506 1.80723 13.0121 1.80723 14.0964 1.80723C15.0602 1.80723 15.5422 2.04819 15.9036 2.16868C16.3855 2.40964 16.747 2.53012 17.1084 2.89157C17.4699 3.25301 17.7108 3.61446 17.8313 4.09639C17.9518 4.45783 18.0723 4.93976 18.1928 5.90362C18.1928 6.98795 18.1928 7.22892 18.1928 10C18.1928 12.7711 18.1928 13.0121 18.1928 14.0964C18.1928 15.0602 17.9518 15.5422 17.8313 15.9036C17.5904 16.3855 17.4699 16.747 17.1084 17.1084C16.747 17.4699 16.3855 17.7108 15.9036 17.8313C15.5422 17.9518 15.0602 18.0723 14.0964 18.1928C13.0121 18.1928 12.7711 18.1928 10 18.1928C7.22892 18.1928 6.98795 18.1928 5.90362 18.1928C4.93976 18.1928 4.45783 17.9518 4.09639 17.8313C3.61446 17.5904 3.25301 17.4699 2.89157 17.1084C2.53012 16.747 2.28916 16.3855 2.16868 15.9036C2.04819 15.5422 1.92771 15.0602 1.80723 14.0964C1.80723 13.0121 1.80723 12.7711 1.80723 10C1.80723 7.22892 1.80723 6.98795 1.80723 5.90362C1.80723 4.93976 2.04819 4.45783 2.16868 4.09639C2.40964 3.61446 2.53012 3.25301 2.89157 2.89157C3.25301 2.53012 3.61446 2.28916 4.09639 2.16868C4.45783 2.04819 4.93976 1.92771 5.90362 1.80723C6.98795 1.80723 7.3494 1.80723 10 1.80723ZM10 0C7.22892 0 6.98795 0 5.90362 0C4.81928 0 4.09639 0.240965 3.49398 0.481928C2.89157 0.722892 2.28916 1.08434 1.68675 1.68675C1.08434 2.28916 0.843374 2.77109 0.481928 3.49398C0.240965 4.09639 0.120482 4.81928 0 5.90362C0 6.98795 0 7.3494 0 10C0 12.7711 0 13.0121 0 14.0964C0 15.1807 0.240965 15.9036 0.481928 16.506C0.722892 17.1084 1.08434 17.7108 1.68675 18.3133C2.28916 18.9157 2.77109 19.1566 3.49398 19.5181C4.09639 19.759 4.81928 19.8795 5.90362 20C6.98795 20 7.3494 20 10 20C12.6506 20 13.0121 20 14.0964 20C15.1807 20 15.9036 19.759 16.506 19.5181C17.1084 19.2771 17.7108 18.9157 18.3133 18.3133C18.9157 17.7108 19.1566 17.2289 19.5181 16.506C19.759 15.9036 19.8795 15.1807 20 14.0964C20 13.0121 20 12.6506 20 10C20 7.3494 20 6.98795 20 5.90362C20 4.81928 19.759 4.09639 19.5181 3.49398C19.2771 2.89157 18.9157 2.28916 18.3133 1.68675C17.7108 1.08434 17.2289 0.843374 16.506 0.481928C15.9036 0.240965 15.1807 0.120482 14.0964 0C13.0121 0 12.7711 0 10 0Z"
+                        fill="white"
+                        class="dark:fill-black group-hover:fill-white duration-300"
+                      />
+                      <path
+                        d="M10 4.81928C7.10843 4.81928 4.81928 7.10843 4.81928 10C4.81928 12.8916 7.10843 15.1807 10 15.1807C12.8916 15.1807 15.1807 12.8916 15.1807 10C15.1807 7.10843 12.8916 4.81928 10 4.81928ZM10 13.3735C8.19277 13.3735 6.62651 11.9277 6.62651 10C6.62651 8.19277 8.07229 6.62651 10 6.62651C11.8072 6.62651 13.3735 8.07229 13.3735 10C13.3735 11.8072 11.8072 13.3735 10 13.3735Z"
+                        fill="white"
+                        class="dark:fill-black group-hover:fill-white duration-300"
+                      />
+                      <path
+                        d="M15.3012 5.90362C15.9666 5.90362 16.506 5.3642 16.506 4.6988C16.506 4.03339 15.9666 3.49398 15.3012 3.49398C14.6358 3.49398 14.0964 4.03339 14.0964 4.6988C14.0964 5.3642 14.6358 5.90362 15.3012 5.90362Z"
+                        fill="white"
+                        class="dark:fill-black group-hover:fill-white duration-300"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="duration-300 group w-10 flex justify-center items-center h-10 rounded-full bg-black dark:bg-white"
                   >
-                    <img src="./images/Vector.svg" alt="" />
-                  </div>
-                </a>
+                    <svg
+                      width="20"
+                      height="16"
+                      viewBox="0 0 20 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.6 1.89999C18.9 2.19999 18.1 2.4 17.3 2.5C18.1 2 18.8 1.2 19.1 0.300003C18.3 0.800003 17.5 1.1 16.5 1.3C15.8 0.500003 14.7 0 13.6 0C11.4 0 9.59999 1.8 9.59999 4C9.59999 4.3 9.6 4.59999 9.7 4.89999C6.4 4.69999 3.39999 3.1 1.39999 0.699997C1.09999 1.3 0.899994 2 0.899994 2.7C0.899994 4.1 1.6 5.3 2.7 6C2 6 1.39999 5.8 0.899994 5.5C0.899994 7.4 2.29999 9.09999 4.09999 9.39999C3.79999 9.49999 3.4 9.5 3 9.5C2.7 9.5 2.5 9.49999 2.2 9.39999C2.7 11 4.2 12.2 6 12.2C4.6 13.3 2.9 13.9 1 13.9C0.7 13.9 0.4 13.9 0 13.8C1.8 14.9 3.9 15.6 6.2 15.6C13.6 15.6 17.6 9.5 17.6 4.2V3.7C18.4 3.4 19.1 2.69999 19.6 1.89999Z"
+                        fill="white"
+                        class="dark:fill-black"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="group w-10 flex justify-center items-center h-10 rounded-full bg-black dark:bg-white"
+                  >
+                    <svg
+                      width="12"
+                      height="23"
+                      viewBox="0 0 12 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.65708 12.3648H11.3793L11.9637 8.56055H7.65632V6.48134C7.65632 4.90099 8.16957 3.49962 9.63891 3.49962H12V0.179741C11.5852 0.123382 10.7078 0 9.04996 0C5.58819 0 3.55867 1.8393 3.55867 6.0297V8.56055H0V12.3648H3.55867V22.821C4.26344 22.9276 4.97729 23 5.71007 23C6.37245 23 7.01893 22.9391 7.65708 22.8522V12.3648Z"
+                        fill="white"
+                        class="dark:fill-black"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="#"
+                    class="hover:bg- duration-300 group w-10 flex justify-center items-center h-10 rounded-full bg-black dark:bg-white"
+                  >
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.9268 3.0625C15.9512 1.09375 13.3171 0 10.5366 0C4.7561 0 0.0731696 4.66667 0.0731696 10.4271C0.0731696 12.25 0.585366 14.0729 1.46341 15.6042L0 21L5.56098 19.5417C7.09756 20.3438 8.78049 20.7812 10.5366 20.7812C16.3171 20.7812 21 16.1146 21 10.3542C20.9268 7.65625 19.9024 5.03125 17.9268 3.0625ZM15.5854 14.1458C15.3659 14.7292 14.3415 15.3125 13.8293 15.3854C13.3902 15.4583 12.8049 15.4583 12.2195 15.3125C11.8537 15.1667 11.3415 15.0208 10.7561 14.7292C8.12195 13.6354 6.43903 11.0104 6.29268 10.7917C6.14634 10.6458 5.19512 9.40625 5.19512 8.09375C5.19512 6.78125 5.85366 6.19792 6.07317 5.90625C6.29268 5.61458 6.58536 5.61458 6.80488 5.61458C6.95122 5.61458 7.17073 5.61458 7.31707 5.61458C7.46341 5.61458 7.68293 5.54167 7.90244 6.05208C8.12195 6.5625 8.63414 7.875 8.70731 7.94792C8.78049 8.09375 8.78049 8.23958 8.70731 8.38542C8.63414 8.53125 8.56097 8.67708 8.41463 8.82292C8.26829 8.96875 8.12195 9.1875 8.04878 9.26042C7.90244 9.40625 7.7561 9.55208 7.90244 9.77083C8.04878 10.0625 8.56097 10.8646 9.36585 11.5937C10.3902 12.4687 11.1951 12.7604 11.4878 12.9063C11.7805 13.0521 11.9268 12.9792 12.0732 12.8333C12.2195 12.6875 12.7317 12.1042 12.878 11.8125C13.0244 11.5208 13.2439 11.5938 13.4634 11.6667C13.6829 11.7396 15 12.3958 15.2195 12.5417C15.5122 12.6875 15.6585 12.7604 15.7317 12.8333C15.8049 13.0521 15.8049 13.5625 15.5854 14.1458Z"
+                        fill="white"
+                        class="dark:fill-black"
+                      />
+                    </svg>
+                  </a>
+                </div>
 
-                <a
-                  href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435741%7Ce%7Cfaccebook%7C&placement=&creative=477437435741&keyword=faccebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-299440594705%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQiAxbefBhDfARIsAL4XLRp-CwzPVR5NoYPlaLIycjUc1GX666xg4BqveV9tgXED52cFFL_p6xgaAr_KEALw_wcB"
+                <div
+                  class="group cursor-pointer ml-5 w-[70px] h-[70px] duration-300 active:bg-[#F5F5F5] rounded-full hover:bg-[#077743] bg-[#299764] bottom-10 right-0 flex justify-center items-center"
+                  id="myBtn"
                 >
-                  <div
-                    class="w-[40px] h-[40px] border rounded-full bg-black justify-center items-center flex"
+                  <svg
+                    width="14"
+                    height="18"
+                    viewBox="0 0 14 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mx-auto"
                   >
-                    <img src="./images/Vector (1).svg" alt="" />
-                  </div>
-                </a>
-
-                <a href="https://www.whatsapp.com/?lang=ru">
-                  <div
-                    class="w-[40px] h-[40px] border rounded-full bg-black justify-center items-center flex"
-                  >
-                    <img src="./images/telefon.svg" alt="" />
-                  </div>
-                </a>
+                    <path
+                      d="M2.37379 7.04044C1.98327 7.43097 1.3501 7.43097 0.95958 7.04044C0.569056 6.64992 0.569056 6.01675 0.95958 5.62623L6.29291 0.292893C6.68344 -0.0976311 7.3166 -0.0976311 7.70713 0.292893L13.0405 5.62623C13.431 6.01675 13.431 6.64992 13.0405 7.04044C12.6499 7.43097 12.0168 7.43097 11.6262 7.04044L8.00002 3.41421L8.00002 16.3333C8.00002 16.8856 7.5523 17.3333 7.00002 17.3333C6.44773 17.3333 6.00002 16.8856 6.00002 16.3333L6.00002 3.41421L2.37379 7.04044Z"
+                      fill="white"
+                      class="group-active:fill-black"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>

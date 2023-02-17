@@ -63,7 +63,6 @@ modalWindow.addEventListener("click", (e) => {
 
 
 
-//------------------ swiper js------------------
 
 // !--slider-------------------
 const swiperWrap = document.querySelector(".swiper-wrapper");
@@ -120,6 +119,261 @@ contents.forEach((val) => {
   swiperWrap.append(element);
   pagin.append(paginElem);
 });
+
+
+// Cards
+
+
+const cards = [
+  {
+    id: 1,
+    name: "Ford Fiesta",
+    type: "Economy Car",
+    img: "./images/image 13.png",
+    seats: "5 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Compact",
+  },
+  {
+    id: 2,
+    name: "Nissan Versa",
+    type: "Compact Car",
+    img: "./images/image 13 (1).png",
+    seats: "5 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Compact",
+  },
+  {
+    id: 3,
+    name: "Toyota Corolla",
+    type: "Mid-size Car",
+    img: "./images/image 13 (2).png",
+    seats: "5 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Compact",
+  },
+  {
+    id: 4,
+    name: "Nissan Rogue",
+    type: "Mid-size SUV",
+    img: "./images/image 13 (3).png",
+    seats: "5 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Compact",
+  },
+  {
+    id: 5,
+    name: "Chevy Traverse",
+    type: "Full-size SUV ",
+    img: "./images/image 13 (4).png",
+    seats: "5 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Compact",
+  },
+  {
+    id: 6,
+    name: "Nissan Altima",
+    type: "Full-size Car",
+    img: "./images/image 13 (5).png",
+    seats: "5 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Compact",
+  },
+  {
+    id: 7,
+    name: "Royce rolls ghost",
+    type: "Full-size Car",
+    img: "./images/image 13 (6).png",
+    seats: "5 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Sports cars",
+  },
+  {
+    id: 8,
+    name: "Mercedes s class",
+    type: "Full-size Car",
+    img: "./images/image 13 (7).png",
+    seats: "5 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Sports cars",
+  },
+  {
+    id: 9,
+    name: "Lamborghini urus",
+    type: "Mid-size Car",
+    img: "./images/image 13 (8).png",
+    seats: "5 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Sports cars",
+  },
+  {
+    id: 10,
+    name: "Mercedes g63 amg",
+    type: "Mid-size SUV",
+    img: "./images/image 13 (9).png",
+    seats: "5 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Sports cars",
+  },
+  {
+    id: 11,
+    name: "15-Passenger Ford Transit ",
+    type: "Full-size Car",
+    img: "./images/image 13 (10).png",
+    seats: "15 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Vans",
+  },
+  {
+    id: 12,
+    name: "Chrysler Pacifica",
+    type: "Full-size Car",
+    img: "./images/image 13 (11).png",
+    seats: "5 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Vans",
+  },
+  {
+    id: 13,
+    name: "Chevy Silverado 4500HD",
+    type: "Mid-size Car",
+    img: "./images/image 13 (12).png",
+    seats: "5 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Vans",
+  },
+  {
+    id: 14,
+    name: "12-Passenger Ford Transit",
+    type: "Mid-size SUV",
+    img: "./images/image 13 (13).png",
+    seats: "12 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Vans",
+  },
+  {
+    id: 15,
+    name: "Mercedes-Benz Sprinter",
+    type: "Mid-size SUV",
+    img: "./images/image 13 (14).png",
+    seats: "12 Seats",
+    lever: "Automatic",
+    age: "21+ Years",
+    fuel: "1-lit / 2.5 km",
+    filter: "Vans",
+  },
+];
+const card_wrapper = document.querySelector(".car__cards");
+renderCard(cards, "Compact");
+function renderCard(cards, filter) {
+  card_wrapper.innerHTML = "";
+
+  cards.forEach((val) => {
+    if (val.filter === filter || filter == "View all cars") {
+      const element = createElement(
+        "div",
+        "w-[358px] sm:w-[387px] group h-[395px] sm:h-[433px] duration-300 py-[30px] hover:text-black bg-[#F5F5F5] dark:bg-[#272727] rounded-2xl hover:bg-[#299764] hover:text-white cursor-pointer",
+        `
+    
+    <h1 class="font-semibold text-[24px] duration-300 group-hover:text-white leading-[29px] mx-6">
+    ${val.name}
+  </h1>
+  <p
+    class="font-medium text-[#555555] dark:text-white duration-300 mt-2 group-hover:text-[#fff] text-[16px] leading-[20px] mx-6"
+  >
+  ${val.type}
+  </p>
+  <img src="${val.img}" class="mt-4" alt="car" />
+  <div
+    class="grid grid-cols-2 grid-rows-2 ml-[23px] sm:ml-[27px] mr-[68px] sm:mr-[89px] gap-2 sm:gap-6"
+  >
+    <div class="flex justify-start items-center">
+      <i class="bx bxs-user duration-300 group-hover:text-white"></i>
+      <span class="ml-[13px] duration-300 group-hover:text-white text-4 leading-5">${val.seats}</span>
+    </div>
+
+    <div class="flex justify-start items-center">
+      <div
+        class="bg-[url('./images/Vectorlight.svg')] dark:bg-[url('./images/Vector.svg')] duration-300 group-hover:bg-[url('./images/Vector.svg')] bg-center bg-cover w-3 h-3 inline-block"
+      ></div>
+      <span class="ml-[17px] duration-300 group-hover:text-white text-4 leading-5 ">${val.lever}</span>
+    </div>
+
+    <div class="flex justify-start items-center">
+      <div
+        class="bg-[url('./images/userpagerdark.svg')] dark:bg-[url('./images/userpage.svg')] duration-300 group-hover:bg-[url('./images/userpage.svg')] bg-center bg-cover w-3 h-3 inline-block"
+      ></div>
+      <span class="ml-[13px] duration-300 group-hover:text-white text-4 leading-5">${val.age}</span>
+    </div>
+
+    <div class="flex justify-start items-center">
+      <i class="bx bxs-droplet duration-300 group-hover:text-white"></i>
+      <span class="ml-[13px] duration-300 group-hover:text-white text-4 leading-5">${val.fuel}</span>
+    </div>
+  </div>
+    `
+      );
+      card_wrapper.append(element);
+    }
+  });
+}
+// ! filter button
+const filter__buttons = document.querySelector(".filter__buttons");
+filter__buttons.addEventListener("click", (e) => {
+  if (e.target.classList.contains("fill-btn")) {
+    document
+      .querySelector(".filter__buttons-active")
+      .classList.remove("filter__buttons-active");
+
+    e.target.classList.add("filter__buttons-active");
+    console.log(e.target.textContent);
+    renderCard(cards, e.target.textContent.trim());
+  }
+});
+
+const allBtn = document.querySelector(".all-btn");
+allBtn.addEventListener("click", (e) => {
+  document
+    .querySelector(".filter__buttons-active")
+    .classList.remove("filter__buttons-active");
+  renderCard(cards, e.target.textContent.trim());
+  allBtn.classList.add("filter__buttons-active");
+});
+
+
+
+
+
+
+
 
 
 
@@ -250,3 +504,37 @@ slider__left.addEventListener("click", (e) => {
   const scr = document.querySelectorAll(".scrbr-item");
   scr[count].classList.add("active-scroll");
 });
+
+
+
+let mybutton = document.getElementById("myBtn");
+
+mybutton.addEventListener("click", (e) => {
+  topFunction();
+});
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+let menu = document.querySelector(".menu");
+let menuMd = document.querySelector(".menu-md");
+
+menu.addEventListener("click", () => {
+  menuMd.classList.toggle("hidden");
+});
+
+let cancel = document.querySelector(".cancel");
+
+cancel.addEventListener("click", () => {
+  menuMd.classList.toggle("hidden");
+});
+
+
+
+let btnLoginMenu = document.querySelector(".btn-menu");
+
+btnLoginMenu.addEventListener("click", () => {
+  menuMd.classList.toggle("hidden");
+  modal.classList.remove("hidden");
+})
